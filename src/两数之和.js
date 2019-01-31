@@ -8,18 +8,14 @@
  * 所以返回 [0, 1]
  * 
  */
-
 var twoSum = function (nums, target) {
 	var obj = {};
-	nums.forEach(function (item, index) {
-		obj[item] = index;
-	});
 	for (var i =0;i<nums.length;i++) {
 		var remain = target - nums[i];
-		if (obj[remain]&&obj[remain]!=i) {
+		if ((obj[remain]!=null)&&obj[remain]!=i) {
 			return [i, obj[remain]];
-		} else
-			continue;
+		}
+		obj[nums[i]] = i;
 	}
 	return [];
 };
