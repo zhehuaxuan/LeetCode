@@ -4,7 +4,8 @@
   "description": "leetcode刷题",
   "main": "两数之和.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node 两数之和.js"
   },
   "author": "xuanzhehua",
   "license": "ISC"
