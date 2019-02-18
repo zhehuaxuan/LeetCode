@@ -1,6 +1,4 @@
 
-
-
 (function(arg){
     function isRepeat(s){
         var a = new Set(s.split(""));
