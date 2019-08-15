@@ -12,7 +12,7 @@ function TreeNode(val) {
  */
 var maxDepth = function (root) {
     var res = 0;
-    var depthIterator = function(node,counter){
+    function depthIterator(node,counter){
         if(node!=null){
             depthIterator(node.left,counter+1);
             depthIterator(node.right,counter+1);
